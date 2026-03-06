@@ -1,0 +1,43 @@
+                <<interface>>
+                   Music
+          -------------------------
+          + tocar()
+          + pausar()
+          + selecionarMusica(musica)
+
+
+             <<interface>>
+            TelephoneDevice
+          -------------------------
+          + ligar(numero)
+          + atender()
+          + iniciarCorreioVoz()
+
+
+              <<interface>>
+            InternetBrowser
+          -------------------------
+          + exibirPagina(url)
+          + adicionarNovaAba()
+          + atualizarPagina()
+
+
+                      ▲
+                      │
+                      │ implements
+                      │
+                 +------------+
+                 |   Iphone   |
+                 +------------+
+                 |            |
+                 +------------+
+                 | + tocar() |
+                 | + pausar() |
+                 | + selecionarMusica() |
+                 | + ligar() |
+                 | + atender() |
+                 | + iniciarCorreioVoz() |
+                 | + exibirPagina() |
+                 | + adicionarNovaAba() |
+                 | + atualizarPagina() |
+                 +------------+
